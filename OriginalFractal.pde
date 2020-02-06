@@ -1,14 +1,15 @@
 
 
-PImage img;
-PImage hi;
+PImage img, hi;
+
 public void setup()
 {
 	size(400,400);
 	imageMode(CENTER);
 
-	hi = loadImage("sponge_bob_world.jpg");
 	img = loadImage("SpongeBob.png");
+	hi = loadImage("sponge_bob_world.jpg");
+
 }
 
 public void draw()
@@ -16,8 +17,8 @@ public void draw()
 	
 	image(hi,200,200,width*1.1,height*1.1);
 	myFractal(200,200,width,height);
+
 	
-	// image(img,100,100,width/2,height/2);
 
 }
 
@@ -31,8 +32,6 @@ public void myFractal(float x, float y, float w, float h)
 		
 
 	}
-
-
 }
 
 
